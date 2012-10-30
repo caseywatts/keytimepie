@@ -1,0 +1,32 @@
+<%= form_for @activity, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :title, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :title, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label "Class Hours", :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :scheduledclass, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label "Section Hours", :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :scheduledsection, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label "Homework Hours", :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :unscheduled, :class => 'text_field' %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                activities_path, :class => 'btn' %>
+  </div>
+<% end %>

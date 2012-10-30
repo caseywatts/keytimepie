@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyText
+  scheduledclass: 9.99
+  scheduledsection: 9.99
+  unscheduled: 9.99
+
+two:
+  title: MyText
+  scheduledclass: 9.99
+  scheduledsection: 9.99
+  unscheduled: 9.99
