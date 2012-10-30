@@ -49,3 +49,9 @@ end
 
 gem 'twitter-bootstrap-rails'
 gem 'heroku'
+
+group :development do
+  'guard'
+  'guard-livereload'
+  'yajl-ruby'
+end
