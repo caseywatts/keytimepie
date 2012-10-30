@@ -55,3 +55,5 @@ group :development do
   gem 'guard-livereload'
   gem 'yajl-ruby'
 end
+
+gem 'omniauth-twitter'
